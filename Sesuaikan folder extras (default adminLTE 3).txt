@@ -1,0 +1,4 @@
+Sesuaikan folder extras (default adminLTE 3)
+ganti baseurl di file config.php pd folder application/config
+ganti nama db d file database.php pd folder application/config
+copy tabel sys_user pada db default
