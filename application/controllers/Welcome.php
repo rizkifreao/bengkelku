@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
 
+/**
+ *
+ * Controller Welcome
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Welcome extends CI_Controller
+{
+    
 	function __construct(){
 		parent::__construct();
 		// if (!$this->session->userdata("id")){
@@ -49,4 +65,9 @@ class Welcome extends CI_Controller {
         $data['konten'] = "page/export/user";
         $this->load->view("page/export/templatePdf",$data);
 	}
+
 }
+
+
+/* End of file Welcome.php */
+/* Location: ./modules/controllers/Welcome.php */

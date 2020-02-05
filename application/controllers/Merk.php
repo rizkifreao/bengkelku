@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
+// Don't forget include/define REST_Controller path
 
-class Merk extends CI_Controller {
-	
+/**
+ *
+ * Controller Merk
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Merk extends CI_Controller
+{
+    
 	var $kelas = "Merk";
 
 	function __construct(){
@@ -41,4 +57,9 @@ class Merk extends CI_Controller {
 		$this->M_mst_merk->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Merk.php */
+/* Location: ./modules/controllers/Merk.php */

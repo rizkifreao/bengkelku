@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Satuan extends CI_Controller {
-	
+
+/**
+ *
+ * Controller Satuan
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Satuan extends CI_Controller
+{
+    
 	var $kelas = "Satuan";
 
 	function __construct(){
@@ -41,4 +57,9 @@ class Satuan extends CI_Controller {
 		$this->M_mst_satuan->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Satuan.php */
+/* Location: ./modules/controllers/Satuan.php */

@@ -1,8 +1,23 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Kategori extends CI_Controller {
-	
+/**
+ *
+ * Controller Kategori
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Kategori extends CI_Controller
+{
+    
 	var $kelas = "Kategori";
 
 	function __construct(){
@@ -41,4 +56,9 @@ class Kategori extends CI_Controller {
 		$this->M_mst_kategori->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Kategori.php */
+/* Location: ./modules/controllers/Kategori.php */

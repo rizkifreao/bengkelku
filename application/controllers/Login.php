@@ -1,8 +1,23 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login extends CI_Controller {
-	
+/**
+ *
+ * Controller Login
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Login extends CI_Controller
+{
+    
 	var $kelas = "Login";
 
 	function __construct(){
@@ -42,4 +57,9 @@ class Login extends CI_Controller {
 		$this->session->unset_userdata("welcome");
 		redirect("Login");
 	}
+
 }
+
+
+/* End of file Login.php */
+/* Location: ./modules/controllers/Login.php */

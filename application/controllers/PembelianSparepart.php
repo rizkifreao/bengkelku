@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class PembelianSparepart extends CI_Controller {
-	
+
+/**
+ *
+ * Controller PembelianSparepart
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class PembelianSparepart extends CI_Controller
+{
+    
 	var $kelas = "PembelianSparepart";
 
 	function __construct(){
@@ -101,4 +117,9 @@ class PembelianSparepart extends CI_Controller {
 		$this->M_pembelian_detail->delete($id);
 		if($loop != 1) redirect($this->kelas."/detail/".$pembelianid);
 	}
+
 }
+
+
+/* End of file PembelianSparepart.php */
+/* Location: ./modules/controllers/PembelianSparepart.php */

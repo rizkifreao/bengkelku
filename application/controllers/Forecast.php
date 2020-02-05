@@ -1,9 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Forecast extends CI_Controller {
-	
-	var $kelas = "Forecast";
+/**
+ *
+ * Controller Forecast
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Forecast extends CI_Controller
+{
+    
+    var $kelas = "Forecast";
 
 	function __construct(){
 		parent::__construct();
@@ -206,4 +221,9 @@ class Forecast extends CI_Controller {
 		$data["sdS"] = $sdS;
 		return $data;
 	}
+
 }
+
+
+/* End of file Forecast.php */
+/* Location: ./modules/controllers/Forecast.php */

@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Workorder extends CI_Controller {
-	
+
+/**
+ *
+ * Controller Workorder
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Workorder extends CI_Controller
+{
+    
 	var $kelas = "Workorder";
 
 	function __construct(){
@@ -141,4 +157,9 @@ class Workorder extends CI_Controller {
 		$nomor = sprintf("%04d",$max);
 		return $param.$nomor;
 	}
+
 }
+
+
+/* End of file Workorder.php */
+/* Location: ./modules/controllers/Workorder.php */

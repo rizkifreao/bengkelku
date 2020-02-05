@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Sparepart extends CI_Controller {
-	
+
+/**
+ *
+ * Controller Sparepart
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Sparepart extends CI_Controller
+{
+    
 	var $kelas = "Sparepart";
 
 	function __construct(){
@@ -50,4 +66,9 @@ class Sparepart extends CI_Controller {
 		$this->M_sparepart->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Sparepart.php */
+/* Location: ./modules/controllers/Sparepart.php */

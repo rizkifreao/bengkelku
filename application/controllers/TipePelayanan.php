@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class TipePelayanan extends CI_Controller {
-	
+
+/**
+ *
+ * Controller TipePelayanan
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class TipePelayanan extends CI_Controller
+{
+    
 	var $kelas = "TipePelayanan";
 
 	function __construct(){
@@ -42,4 +58,9 @@ class TipePelayanan extends CI_Controller {
 		$this->M_mst_tipe_pelayanan->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file TipePelayanan.php */
+/* Location: ./modules/controllers/TipePelayanan.php */

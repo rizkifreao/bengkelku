@@ -1,9 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Feedback extends CI_Controller {
-	
-	var $kelas = "Feedback";
+/**
+ *
+ * Controller Feedback
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Feedback extends CI_Controller
+{
+    
+    var $kelas = "Feedback";
 
 	function __construct(){
 		parent::__construct();
@@ -41,4 +56,9 @@ class Feedback extends CI_Controller {
 		$this->M_mst_feedback->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Feedback.php */
+/* Location: ./modules/controllers/Feedback.php */

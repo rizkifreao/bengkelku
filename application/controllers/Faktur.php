@@ -1,9 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Faktur extends CI_Controller {
-	
-	var $kelas = "Faktur";
+/**
+ *
+ * Controller Faktur
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Faktur extends CI_Controller
+{
+    
+    var $kelas = "Faktur";
 
 	function __construct(){
 		parent::__construct();
@@ -70,4 +85,9 @@ class Faktur extends CI_Controller {
 		$this->M_penjualan->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Faktur.php */
+/* Location: ./modules/controllers/Faktur.php */

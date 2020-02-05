@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
+// Don't forget include/define REST_Controller path
 
-class Pelayanan extends CI_Controller {
-	
+/**
+ *
+ * Controller Pelayanan
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Pelayanan extends CI_Controller
+{
+    
 	var $kelas = "Pelayanan";
 
 	function __construct(){
@@ -55,4 +71,9 @@ class Pelayanan extends CI_Controller {
 		$this->M_mst_pelayanan_detail->delete($id);
 		redirect($this->kelas."/detail/$pelayananid");
 	}
+
 }
+
+
+/* End of file Pelayanan.php */
+/* Location: ./modules/controllers/Pelayanan.php */

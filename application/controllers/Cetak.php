@@ -1,9 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Cetak extends CI_Controller {
+/**
+ *
+ * Controller Cetak
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
 
-	function __construct(){
+class Cetak extends CI_Controller
+{
+    
+    function __construct(){
 		parent::__construct();
 		// if (!$this->session->userdata("id")){
 		// 	redirect("Login");
@@ -66,4 +81,9 @@ class Cetak extends CI_Controller {
 		$data['konten'] = "page/export/pembelian";
         $this->load->view("page/export/templatePdf",$data);
 	}
+
 }
+
+
+/* End of file Cetak.php */
+/* Location: ./modules/controllers/Cetak.php */

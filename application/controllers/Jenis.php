@@ -1,9 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Jenis extends CI_Controller {
-	
-	var $kelas = "Jenis";
+/**
+ *
+ * Controller Jenis
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class Jenis extends CI_Controller
+{
+    
+    var $kelas = "Jenis";
 
 	function __construct(){
 		parent::__construct();
@@ -41,4 +56,9 @@ class Jenis extends CI_Controller {
 		$this->M_mst_jenis->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file Jenis.php */
+/* Location: ./modules/controllers/Jenis.php */

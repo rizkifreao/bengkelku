@@ -1,8 +1,24 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class User extends CI_Controller {
-	
+
+/**
+ *
+ * Controller User
+ *
+ * This controller for ...
+ *
+ * @package   CodeIgniter
+ * @category  Controller CI
+ * @author    Rizki Pebrianto <rizkipebrianto96@gmail.com>
+ * @param     ...
+ * @return    ...
+ *
+ */
+
+class User extends CI_Controller
+{
+    
 	var $kelas = "User";
 
 	function __construct(){
@@ -46,4 +62,9 @@ class User extends CI_Controller {
 		$this->M_user->delete($id);
 		redirect($this->kelas);
 	}
+
 }
+
+
+/* End of file User.php */
+/* Location: ./modules/controllers/User.php */
